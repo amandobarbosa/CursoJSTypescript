@@ -12,3 +12,4 @@ const pessoa = {
 }
 
 semRetorno('Amando', 'barbosa')
+console.log(pessoa);
