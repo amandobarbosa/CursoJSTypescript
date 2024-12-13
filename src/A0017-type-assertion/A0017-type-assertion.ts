@@ -1,3 +1,4 @@
+console.log('oi')
 const body = document.querySelector('body');
 if (body) body.style.background = 'red';
 
@@ -9,4 +10,4 @@ body3.style.background = 'red';
 
 const input = document.querySelector('.input') as HTMLInputElement
 input.value = 'QUalquer coisa'
-input.focus()
+input.focus() 
