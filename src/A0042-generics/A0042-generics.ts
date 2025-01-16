@@ -1,19 +1,19 @@
-type FilterCallback<U> = (value: U, index?: number, array?: U[]) => boolean;
+type MeuTipo = number
 
-export function meuFilter<T>(array: T[], callbackFn: FilterCallback<T>): T[] {
-  const novoArray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (callbackFn(array[i])) {
-      novoArray.push(array[i]);
-    }
-  }
-  return novoArray;
+const arrayNumeros: Array<number> = [1,2,3,4,5,6]
+console.log(arrayNumeros);
+
+async function promiseAsync() {
+  return 1
 }
 
-const arrray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function minhaPromisse(): Promise<MeuTipo>{
+  return new Promise((resolve)=>{
+    setTimeout(() => {
+      resolve(1)
+    }, 1000);
+  })
+}
 
-const arrrayFiltradoOriginal = arrray.filter((value) => value < 5);
-console.log(arrrayFiltradoOriginal);
-
-const arrrayFiltrado = meuFilter(arrray, (value) => value < 5);
-console.log(arrrayFiltrado);
+promiseAsync().then((resultado)=>console.log(resultado + 1))
+minhaPromisse().then((resultado)=>console.log(resultado + 1))
