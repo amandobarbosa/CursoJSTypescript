@@ -6,6 +6,8 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "target": "ES5",
+    "experimentalDecorators": true,
     "outDir": "frontEnd/assets/js",
     "lib": ["ESNext", "DOM"]
   },
