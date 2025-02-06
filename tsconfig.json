@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    // "moduleResolution": "NodeNext",
     "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,
+    "allowJs": true,
     "skipLibCheck": true,
     "target": "ES5",
     "experimentalDecorators": true,
